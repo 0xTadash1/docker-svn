@@ -2,7 +2,7 @@
 
 [![img](https://badgen.net/docker/size/0xtadash1/docker-svn?icon=docker)](https://hub.docker.com/r/0xtadash1/docker-svn)
 
-SVN cut out into a container.
+SVN client command cut out into a container.
 
 For who use SVN to download files from GitHub.
 For who doesn't use SVN as CVS.
