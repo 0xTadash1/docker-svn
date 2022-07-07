@@ -15,19 +15,19 @@ I really hate it. So I wrote an Dockerfile.
 Add the one line to your `.zshrc`/`.bashrc`.
 
 ```sh
-alias svn='docker run --rm -v "${PWD}:/mnt${PWD}" 0xTadash1/docker-svn "$PWD"'
+alias svn='docker run --rm -v "${PWD}:/mnt${PWD}" 0xtadash1/docker-svn "$PWD"'
 ```
 
 OR run bellow one and reload shell.
 
 - If you use **zsh**,
   ```sh
-  echo "alias svn='docker run --rm -v \"\${PWD}:/mnt\${PWD}\" 0xTadash1/docker-svn \"\$PWD\"'" >> ${ZDOTDIR:-$HOME}/.zshrc
+  echo "alias svn='docker run --rm -v \"\${PWD}:/mnt\${PWD}\" 0xtadash1/docker-svn \"\$PWD\"'" >> ${ZDOTDIR:-$HOME}/.zshrc
   ```
 
 - If you use **bash**,
   ```sh
-  echo "alias svn='docker run --rm -v \"\${PWD}:/mnt\${PWD}\" 0xTadash1/docker-svn \"\$PWD\"'" >> ${HOME}/.bashrc
+  echo "alias svn='docker run --rm -v \"\${PWD}:/mnt\${PWD}\" 0xtadash1/docker-svn \"\$PWD\"'" >> ${HOME}/.bashrc
   ```
 
 ---
@@ -41,7 +41,7 @@ svn ls 'https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/JetBrainsMon
 ## Build
 
 ```sh
-docker buildx b -t 0xTadash1/docker-svn:$BASE_IMAGE_V .
+docker buildx b -t 0xtadash1/docker-svn:$BASE_IMAGE_V .
 ```
 
 ## License
