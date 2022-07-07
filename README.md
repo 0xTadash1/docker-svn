@@ -41,7 +41,14 @@ svn ls 'https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/JetBrainsMon
 ## Build
 
 ```sh
-docker buildx b -t 0xtadash1/docker-svn:$BASE_IMAGE_V .
+# Specify the base image (Alpine) version. This code is used as docker-svn's version.
+BASE_IMG_VER=3.16
+
+docker buildx b \
+	--build-arg BASE_IMG_VER=$BASE_IMG_VER \
+	-t 0xtadash1/docker-svn:$BASE_IMG_VER \
+	-t 0xtadash1/docker-svn:latest \
+	.
 ```
 
 ## License
