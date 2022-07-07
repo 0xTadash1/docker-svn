@@ -1,3 +1,14 @@
+I was told that if I simply did not want to create `~/.subversion`, I could use the `--config-dir` option.
+So, if I had created `/var/empty` and used `alias svn='svn --config-dir /var/empty'`,
+I wouldn't have bothered containerizing it. LOL!
+
+BTW, using `/var/empty` for `--config-dir` is for security reasons. I tried to use `/tmp` at first,
+but the guy who taught me `--config-dir` informed me it is dangerous.
+
+The details are in [this reply](https://twitter.com/y_futatuki/status/1545247490433511424?s=20&t=hdJK0LogtBtyUmlek8cqbg) in Japanese.
+
+---
+
 # docker-svn
 
 [![img](https://badgen.net/docker/size/0xtadash1/docker-svn?icon=docker)](https://hub.docker.com/r/0xtadash1/docker-svn)
