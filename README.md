@@ -7,7 +7,7 @@ For who doesn't use SVN as CVS.
 
 ## Motivation
 
-I need SVN just for downloading files. But every time SVN dums `~/.subversion` in my home.
+I need SVN just for downloading files. But every time SVN dumps out `~/.subversion` in my home.
 I really hate it. So I wrote an Dockerfile.
 
 ## Usage
@@ -18,7 +18,7 @@ Add the one line to your `.zshrc`/`.bashrc`.
 alias svn='docker run --rm -v "${PWD}:/mnt${PWD}" 0xTadash1/docker-svn "$PWD"'
 ```
 
-OR run bellow one, and reload shell.
+OR run bellow one and reload shell.
 
 - If you use **zsh**,
   ```sh
@@ -32,7 +32,7 @@ OR run bellow one, and reload shell.
 
 ---
 
-You can test via a bellow command. This should list files in [here](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono/Ligatures).
+You can test via a bellow command. This should list up files in [here](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono/Ligatures).
 
 ```sh
 svn ls 'https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/JetBrainsMono/Ligatures'
